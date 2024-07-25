@@ -1,0 +1,119 @@
+p {
+    text-align: center;
+}
+
+button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+fieldset {
+    border: 1px solid rgb(255, 232, 57);
+    width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+#inicio {
+    display: flex;
+    margin-top: 200px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#inicio div {
+    padding: 0.5em;
+}
+
+#divRespuestas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Estilos para los botones de respuesta */
+.respuestas {
+    border: 2px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: calc(50% - 20px);
+    text-align: center;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.respuestas:hover {
+    background-color: #e0e0e0;
+}
+
+/* Estilos para la ventana modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Estilos para el contenido de la modal */
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    overflow: auto; 
+}
+
+
+@media screen and (max-height: 700px) {
+    .modal-content {
+        margin: 5% auto;
+    }
+}
+
+
+ #resultado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    display: none;
+    text-align: center;
+}
+
+/* Estilos para las imágenes */
+#imagenCorrecto,
+#imagenIncorrecto {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px; /* Espacio entre la imagen y el botón */
+}
+
+#mensaje {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Estilos para el botón Siguiente Pregunta */
+#siguienteBtn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+}

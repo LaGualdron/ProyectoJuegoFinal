@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="css/estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIERE SER MILLONARIO?</title>
+</head>
+<body>
+    <h1>¿QUIERE SER MILLONARIO?</h1>
+    <div>
+        <h2>3. ¿Cuál es el comando para inicializar un nuevo repositorio Git?</h2>
+    </div>
+    <div id="divRespuestas">
+        <div class="respuestas" data-respuesta="incorrecta">
+            <p>git start</p>
+        </div>
+        <div class="respuestas correcta" data-respuesta="correcta">
+            <p>git init</p>
+        </div>
+        <div class="respuestas" data-respuesta="incorrecta">
+            <p>git create</p>
+        </div>
+        <div class="respuestas" data-respuesta="incorrecta">
+            <p>git new</p>
+        </div>
+    </div>
+
+    <div id="resultado">
+        <img id="imagenCorrecto" src="images/correcto.jpg" alt="Correcto">
+        <img id="imagenIncorrecto" src="images/incorrecto.png" alt="Incorrecto">
+        <p id="mensaje"></p>
+        <button id="siguienteBtn">Siguiente Pregunta</button>
+    </div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/juego.js"></script>
+</body>
+</html>
